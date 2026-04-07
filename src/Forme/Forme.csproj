@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <PackageId>AristurtleDev.Forme</PackageId>
+    <PackageId>CnCNet.Forme.NET48</PackageId>
   </PropertyGroup>
 
   <ItemGroup>

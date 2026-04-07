@@ -10,14 +10,15 @@
 
     <!-- Version Configuration -->
     <PropertyGroup>
-        <Version>0.0.3</Version>
+        <Version>0.0.3.1</Version>
         <MonoGameVersion>3.8.0.1641</MonoGameVersion>
     </PropertyGroup>
 
     <PropertyGroup>
-        <Authors>Christopher Whitley (AristurtleDev)</Authors>
-        <PackageProjectUrl>https://github.com/aristurtledev/forme</PackageProjectUrl>
-        <RepositoryUrl>https://github.com/aristurtledev/forme</RepositoryUrl>
+        <Authors>Christopher Whitley (AristurtleDev), SadPencil @ CnCNet</Authors>
+        <Description>A fork of AristurtleDev.Forme.* for .NET 4.8 and MonoGame 3.8.0.1641</Description>
+        <PackageProjectUrl>https://github.com/CnCNet/Forme.NET48</PackageProjectUrl>
+        <RepositoryUrl>https://github.com/CnCNet/Forme.NET48</RepositoryUrl>
         <RepositoryType>git</RepositoryType>
         <RepositoryBranch>develop</RepositoryBranch>
         <NeutralLanguage>en</NeutralLanguage>

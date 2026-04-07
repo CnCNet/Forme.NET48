@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <PackageId>AristurtleDev.Forme.MonoGame</PackageId>
+    <PackageId>CnCNet.Forme.MonoGame.NET48</PackageId>
     <RootNamespace>Forme.MonoGame</RootNamespace>
   </PropertyGroup>
 
