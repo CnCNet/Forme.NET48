@@ -10,7 +10,7 @@
 
 #-------------------------------- References --------------------------------#
 
-/reference:..\..\..\..\.artifacts\src\bin\Forme.MonoGame.Content.Pipeline\debug\Forme.MonoGame.Content.Pipeline.dll
+/reference:..\..\..\..\.artifacts\src\bin\Forme.MonoGame.Content.Pipeline\debug_netcoreapp3.1\Forme.MonoGame.Content.Pipeline.dll
 
 #---------------------------------- Content ---------------------------------#
 

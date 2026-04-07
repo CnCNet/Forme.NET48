@@ -11,6 +11,8 @@
         <IsPackable>true</IsPackable>
         <NoWarn>NU1701</NoWarn>
         <GenerateDocumentationFile>true</GenerateDocumentationFile>
+        <!-- Prevent Polyfill extension types from leaking between assemblies in the library graph -->
+        <PolyUseEmbeddedAttribute>true</PolyUseEmbeddedAttribute>
     </PropertyGroup>
 
 </Project>

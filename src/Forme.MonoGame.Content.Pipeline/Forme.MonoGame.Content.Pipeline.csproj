@@ -5,7 +5,8 @@
   </PropertyGroup>
 
   <PropertyGroup>
-    <TargetFramework>net8.0</TargetFramework>
+    <TargetFrameworks>net8.0;net48;netcoreapp3.1</TargetFrameworks>
+    <SuppressTfmSupportBuildErrors>true</SuppressTfmSupportBuildErrors>
     <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
   </PropertyGroup>
 
@@ -27,7 +28,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Content Include="$(ArtifactsPath)/bin/Forme.MonoGame.Content.Pipeline/$(Configuration.ToLower())/*.dll" Pack="true" PackagePath="lib/$(TargetFramework)/" />
+    <Content Include="$(ArtifactsPath)/bin/Forme.MonoGame.Content.Pipeline/$(Configuration.ToLower())_$(TargetFramework)/*.dll" Pack="true" PackagePath="lib/$(TargetFramework)/" />
   </ItemGroup>
 
 </Project>

@@ -58,7 +58,7 @@ internal sealed class FontProcessor : IDisposable
             StbTrueType.stbtt_GetFontVMetrics(_fontInfo, &ascent, &descent, &lineGap);
 
             float scale = StbTrueType.stbtt_ScaleForMappingEmToPixels(_fontInfo, 1.0f);
-            int unitsPerEm = scale > 0f ? (int)MathF.Round(1.0f / scale) : 1000;
+            int unitsPerEm = scale > 0f ? (int)Math.Round(1.0f / scale) : 1000;
 
             _metrics = new FontMetrics(unitsPerEm, ascent, descent, lineGap);
             _loaded = true;

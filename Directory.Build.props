@@ -2,14 +2,16 @@
 <Project>
 
     <PropertyGroup>
-        <TargetFramework>net8.0</TargetFramework>
+        <TargetFrameworks>net8.0;net48;netcoreapp3.1</TargetFrameworks>
+        <SuppressTfmSupportBuildErrors>true</SuppressTfmSupportBuildErrors>
         <SolutionDirectory>$(MSBuildThisFileDirectory)</SolutionDirectory>
+        <LangVersion>14.0</LangVersion>
     </PropertyGroup>
 
     <!-- Version Configuration -->
     <PropertyGroup>
         <Version>0.0.3</Version>
-        <MonoGameVersion>3.8.4.1</MonoGameVersion>
+        <MonoGameVersion>3.8.0.1641</MonoGameVersion>
     </PropertyGroup>
 
     <PropertyGroup>
@@ -21,6 +23,16 @@
         <NeutralLanguage>en</NeutralLanguage>
         <PackageReadmeFile>README.md</PackageReadmeFile>
         <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Polyfill" Version="10.0.0" PrivateAssets="All" />
+        <PackageReference Include="System.Memory" Version="4.6.3" />
+    </ItemGroup>
+
+    <PropertyGroup>
+        <!-- Opt-in to Polyfill's ArgumentException static-method group (ThrowIfNull, ThrowIfNegative, etc.) -->
+        <PolyArgumentExceptions>true</PolyArgumentExceptions>
     </PropertyGroup>
 
     <ItemGroup>
